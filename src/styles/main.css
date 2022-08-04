@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply antialiased;
+  }
+  body {
+    @apply bg-brand-gray-900 text-brand-gray-300;
+  }
+  :focus {
+    @apply outline-none shadow shadow-brand-green-500;
+  }
+}
+
+@layer components {
+  .navLink {
+    @apply w-12 h-12 flex justify-center items-center text-brand-gray-100 border-y-[3px] border-transparent hover:border-b-brand-green-500;
+  }
+  .navLink.active {
+    @apply text-brand-green-500;
+  }
+}
