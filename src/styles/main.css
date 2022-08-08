@@ -21,4 +21,25 @@
   .navLink.active {
     @apply text-brand-green-500;
   }
+  .history-table {
+    @apply flex-1 overflow-auto mt-8;
+  }
+  .history-table table {
+    @apply w-full border-collapse min-w-[600px];
+  }
+  .history-table table th {
+    @apply bg-brand-gray-600 p-4 text-left text-brand-gray-100 text-sm leading-[1.6];
+  }
+  .history-table table th:first-child {
+    @apply rounded-tl-lg pl-6;
+  }
+  .history-table table th:last-child {
+    @apply rounded-tr-lg pr-6;
+  }
+  .history-table table td {
+    @apply bg-brand-gray-700 border-t-4 border-brand-gray-800 p-4 text-sm leading-[1.6];
+  }
+  .history-table table td:first-child {
+    @apply w-1/2;
+  }
 }
