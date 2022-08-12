@@ -2,6 +2,8 @@ import { ReactNode } from 'react'
 
 import classNames from 'classnames'
 
+import { useCyclesContext } from '../contexts/CyclesContext'
+
 interface StatusProps {
   statusColor: 'yellow' | 'red' | 'green'
   children: ReactNode
@@ -25,6 +27,8 @@ function Status({ statusColor, children }: StatusProps) {
 }
 
 export function History() {
+  const { cycles } = useCyclesContext()
+
   return (
     <main className="flex-1 p-14 flex flex-col">
       <h1 className="text-2xl text-brand-gray-100">Meu histórico</h1>
